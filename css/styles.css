@@ -1,0 +1,172 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sankofa+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sankofa+Display&display=swap');
+
+/* fonts */
+@font-face {
+    font-family: 'DeadPoolFont';
+    src: url(../fonts/roguehero.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "PT Sans", sans-serif;
+}
+
+.mianFrame{
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.introPage{
+    width: 100%;
+    height: 700px;
+    background-image: url('../images/blood-on-the-wall.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+}
+
+.introPage::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.introPage img{
+    position: relative;
+    z-index: 9;
+    height: 550px;
+    width: 900px;
+}
+
+.bookshow {
+    height: 100px;
+    width: 300px;
+}
+
+.bookingButton{
+    position: relative;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movieTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookingButton button{
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 10px #f6b916;
+    font-size: 17px;
+    font-weight: 700;
+    color: #8b2323;
+    background-color: #f6b916;
+    transition: all 0.3s;
+}
+
+.bookingButton button:hover{
+    transform: scale(1.1);
+    color: #f6b916;
+    background-color: #8b2323;
+    box-shadow: 0px 0px 10px #8b2323;
+}
+
+.castHeading {
+    font-family: 'DeadPoolFont', sans-serif;
+    margin: 10px;
+    color: #f6b916;
+    font-weight: 200;
+    font-size: 60px;
+    text-align: center;
+}
+
+.castHeading span{
+    font-weight: 900;
+    color: #8b2323;
+    font-size: 80px;
+}
+
+.castSection{
+    border: 1px solid gray;
+    background-color: black;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+
+.deadPoolInfo{
+    border: none;
+    box-shadow: 0px 0px 10px gray;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    transition: height 0.3s ease;
+}
+
+.secImageDp:hover{
+    display: inline;
+    position: relative;
+    bottom: 250px;
+    transition: transform 0.3s ease;
+}
+
+.secImageDp img{
+    width: 100px;
+    height: 200px;
+    transition: transform 0.3s ease;
+
+}
+
+
+.deadPoolInfo:hover {
+    height: 200px;
+}
+
+.deadPoolInfo:hover .secImageDp img {
+    transform: scale(2);
+}
+
+.xmenInfo{
+    border: none;
+    box-shadow: 0px 0px 10px gray;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.secImageWn img{
+    width: 200px;
+    height: 200px;
+}
